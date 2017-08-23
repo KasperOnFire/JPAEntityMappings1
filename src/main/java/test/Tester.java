@@ -57,8 +57,6 @@ public class Tester {
             addressList.add(a2);
 
             c1.setAddresses(addressList);
-            
-            
 
             em.getTransaction().begin();
             em.persist(b1);
@@ -83,9 +81,8 @@ public class Tester {
             System.out.println(cf.getCustomer(5).getFirstName());
 
             cf.deleteCustomer(5); //nvm
-            
-            cf.getCustomers();
 
+            cf.getCustomers();
 
         } finally {
             em.close();
